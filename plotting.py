@@ -20,8 +20,8 @@ def plotter(data):
   a, b = np.polyfit(x_data, y_data, 1)
 
   # plt.plot(x_data, y_data)
-  plt.scatter(x_data, y_data)
-  plt.plot(x_data, a*x_data+b)
+  plt.scatter(x_data, y_data, s=1)
+  plt.plot(x_data, a*x_data+b, color='purple', linewidth=2)
 
   plt.xlabel('Input size')
   plt.ylabel('Time (seconds)')
