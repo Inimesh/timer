@@ -1,13 +1,13 @@
 from time import process_time
 
-def timer(algo, input):
+def timer(callback, input):
   """
   args: algorithm (function), input
   returns: time in seconds (float)
   """
 
   start = process_time()
-  algo(input)
+  callback(input)
   end = process_time()
 
   return end - start

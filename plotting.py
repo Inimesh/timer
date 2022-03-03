@@ -19,5 +19,3 @@ def plotter(data):
   plt.title('Algorithm Runtime vs. Input size')
 
   plt.show()
-
-  return True
