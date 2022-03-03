@@ -1,4 +1,4 @@
-from time import perf_counter_ns, process_time
+from time import process_time
 
 def timer(callback, input):
   """

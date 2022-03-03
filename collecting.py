@@ -1,6 +1,5 @@
 from timing import timer
 
-
 def collector(callback, input_set):
   """
   args: algorithm (function), set of inputs
