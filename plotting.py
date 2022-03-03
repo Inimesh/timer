@@ -1,7 +1,5 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.interpolate import make_interp_spline
-from scipy.interpolate import interp1d
 
 def plotter(data):
   """
@@ -26,12 +24,9 @@ def plotter(data):
 
   plt.scatter(x_data, y_data, s=1)
   plt.plot(x_new, y_new, color='purple', linewidth=1)
-  # plt.xlim([x[0]-1, x[-1] + 1 ])
-  plt.show()
-
 
   plt.xlabel('Input size')
   plt.ylabel('Time (seconds)')
   plt.title('Algorithm Runtime vs. Input size')
 
-  # plt.show()
+  plt.show()

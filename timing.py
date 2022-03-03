@@ -7,9 +7,7 @@ def timer(callback, input):
   """
 
   start = process_time()
-  # start = perf_counter_ns()
   callback(input)
   end = process_time()
-  # end = perf_counter_ns()
 
-  return (end - start)#*(10**9)
+  return (end - start)
