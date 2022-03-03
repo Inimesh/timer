@@ -21,7 +21,3 @@ def plotter(data):
   plt.show()
 
   return True
-
-
-plotter([ [5, 2], [6, 4], [7, 5], [8, 5.5] ])
-
