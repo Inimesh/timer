@@ -13,7 +13,7 @@ def collector(callback, input_set):
 
   return data
 
-def collect_results_set(algo_callback, generator, inputs_per_test, test_runs):
+def collect_results_set(algo_callback, generator, inputs_per_test, test_runs=1):
   results_set = []
   for i in range(test_runs):
     set = generator(inputs_per_test)

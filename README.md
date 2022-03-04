@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple timing framework to find out the time complexity of algorithms.
+This is a simple timing framework written in Python to deduce the time complexity of algorithms.
 
 ## Screenshots
 
@@ -22,6 +22,31 @@ You can use a REPL for to run the program but it is advised to use jupyter noteb
 
 A useful library of sorting algorithms 'pysort' can be got via 
 
-```
+```bash
 pip3 install pysort
+```
+
+1. Define a function that is to be used as a callback, and call your algorithm inside the body of this function using the args supplied to the callback
+
+```python
+def algo_callback(arg):
+  your_algorithm(arg)
+```
+
+2. Pass this callback along with the desired generator (see below for generator options), number of inputs per test, and the number of test runs (default value is 1). The below example is using the generator type `generator_gran`, 2500 inputs, and a results sample size of 20
+
+```python
+results_set = collect_results_set(algo_callback, generator_type, 2500, 20)
+```
+
+3. To acquire a mean average or our results, pass the unpacked (* operator) results set to the mean_average function
+
+```python
+mean_average_results = mean_average(*results_set)
+```
+
+4. Then plot your averaged data using the plotter function. This plotter plots a scatter graph of input size vs. time (seconds) overlain with a curved line of best fit using the numpy library's `polyfit` function, using a cubic degree.
+
+```python
+plotter(mean_average_results)
 ```
