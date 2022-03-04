@@ -12,3 +12,13 @@ def collector(callback, input_set):
     data.append(datum)
 
   return data
+
+def collect_results_set(algo_callback, generator, inputs_per_test, test_runs):
+  results_set = []
+  for i in range(test_runs):
+    set = generator(inputs_per_test)
+    results = collector(algo_callback, set)
+    results_set.append(results)
+
+  return results_set
+
