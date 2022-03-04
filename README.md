@@ -6,7 +6,9 @@ This is a simple timing framework written in Python to deduce the time complexit
 
 ## Screenshots
 
-using ipython Jupyter notebooks to interactively use program and visualize data
+using ipython Jupyter notebooks to interactively use program and visualize data:
+
+![screenshot_2](https://user-images.githubusercontent.com/72313368/156797166-b5341f1d-67e2-4da9-8662-9fad2a578bfb.png)
 
 ## Dependencies
 Python3 Pacakges:
