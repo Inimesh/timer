@@ -2,16 +2,15 @@ from jinja2 import Undefined
 
 
 def memoNthFibonacci(n, memo=None):
-  if memo == None:
-    memo = {}
+  if memo == None: memo = {}
+  if n < 2: return 1
 
-  if n < 2:
-    return 1
+  if n in memo: 
+    return memo[n]
 
-  if n not in memo:
-    memo[n] = memoNthFibonacci(n-1, memo) + memoNthFibonacci(n-2, memo)
-
+  memo[n] = memoNthFibonacci(n-1, memo) + memoNthFibonacci(n-2, memo)
   return memo[n]
+
 
 if __name__ == "__main__":
   for n in range(50):
