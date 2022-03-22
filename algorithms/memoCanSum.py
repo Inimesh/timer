@@ -9,6 +9,7 @@ def memoCanSum(target, arr, memo=None):
     memo[remainder] = memoCanSum(remainder, arr, memo)
     if memo[remainder]: return True
 
+  memo[target] = False
   return False
 
 print(memoCanSum(7, [2, 3])) # True
