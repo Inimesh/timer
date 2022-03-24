@@ -8,7 +8,6 @@ def canSum(target, arr):
   
   return False
 
-
 print(canSum(7, [2, 3])) # True
 print(canSum(7, [5, 3, 4, 7])) # True
 print(canSum(7, [2, 4])) # False
