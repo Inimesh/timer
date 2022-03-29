@@ -1,4 +1,6 @@
 def nthFibonacci(n):
+  '''A function that determines the nth number of the fibonacci sequence
+  using recursion'''
   if n < 2:
     return 1
 

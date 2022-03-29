@@ -1,4 +1,6 @@
 def canSum(target, arr):
+  '''A function that determines if a target number is the sum of 
+  any combination of numbers of an input array'''
   if target == 0: return True
   if target < 0: return False
 

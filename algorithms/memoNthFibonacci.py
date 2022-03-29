@@ -1,6 +1,5 @@
-from jinja2 import Undefined
-
 def memoNthFibonacci(n, memo=None):
+  '''A memoized version of the nthFibonacci function'''
   if memo == None: memo = {}
   if n < 2: return 1
 

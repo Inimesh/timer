@@ -1,4 +1,5 @@
 def memoCanSum(target, arr, memo=None):
+  '''A memoized version of the canSum function'''
   memo = {} if memo == None else memo
   if target in memo: return memo[target]
   if target == 0: return True

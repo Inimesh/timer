@@ -1,4 +1,6 @@
 def howSum(target, arr):
+  '''A function that determines a combination of numbers of an input array
+  that sum to a target number'''
   if target == 0: return []
   if target < 0: return None
 

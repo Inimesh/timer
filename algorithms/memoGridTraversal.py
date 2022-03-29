@@ -1,4 +1,5 @@
 def gridTraversal(rows, cols, memo=None):
+  '''A memoized version of the gridTraversal function'''
   memo = {} if memo == None else memo
 
   if rows == 0 or cols == 0: return 0
